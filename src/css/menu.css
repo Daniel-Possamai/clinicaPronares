@@ -5,25 +5,44 @@ header{
 .menu{
     display: flex;
     justify-content: space-between;
-    padding: 3%;
+    padding: 1%;
     background-color: var(--cor-primaria);
     box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
 
 }
 
+.menu img{
+    transition: 0.3s;
+}
+
+.menu img:hover{
+    transform: scale(1.05);
+}
+
 .menu nav ul{
     display: flex;
-    gap: 15px;
+    gap: 65px;
 }
 
 .menu nav ul li{
     list-style: none;
+    border-radius: 25px;
+    padding: 5px;
+    transition: 0.3s;
 }
 
 .menu a{
+    font-size: 22px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    
+
+}
+
+.menu nav ul li:hover{
+    transform: scale(1.05);
+    text-shadow: 0px 0px 12px #e2d9d989;
 }
 
 /* Responsivo Mobile */
@@ -43,7 +62,7 @@ header{
     font-size: 26px;
     position: absolute;
     color: var(--cor-secundaria);
-    top: 15px;
+    top: 5px;
     right: 5%;
 }
 

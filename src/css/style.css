@@ -1,6 +1,7 @@
 :root{
     --cor-primaria: #223A54;
     --cor-secundaria: #EBBA80;
+    --cor-secundaria-efeito: #ebbb8013;
 }
 
 body{
@@ -33,7 +34,7 @@ body{
 
 @media screen and (max-width: 400px){
     .btnAbrirMenu i{
-        top: 6px;
+        top: 3px;
     }
 }
 
