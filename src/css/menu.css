@@ -37,12 +37,12 @@ header{
     color: #fff;
     text-decoration: none;
     
-
 }
 
 .menu nav ul li:hover{
     transform: scale(1.05);
     text-shadow: 0px 0px 12px #e2d9d989;
+    border: 1px solid #e2d9d911;
 }
 
 /* Responsivo Mobile */
