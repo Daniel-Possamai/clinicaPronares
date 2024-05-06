@@ -1,0 +1,40 @@
+:root{
+    --cor-primaria: #223A54;
+    --cor-secundaria: #EBBA80;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsivo */
+
+@media screen and (min-width: 1021px) {
+    .btnAbrirMenu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .menu nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btnAbrirMenu i{
+        top: 6px;
+    }
+}
+
+
