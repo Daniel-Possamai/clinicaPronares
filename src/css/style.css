@@ -40,6 +40,51 @@ body{
     width: 100%;
 }
 
+main .interface .profissionais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+main .interface .profissionais h2{
+    color: var(--cor-secundaria);
+    font-size: 40px;
+    text-align: center;
+}
+
+main .interface .profissionais .containerProfissionais{
+    display: flex;
+    gap: 35px;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 25px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.466);
+    background-color: #f0f0f0;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional img{
+    width: 100%;
+    height: 220px;
+    border-radius: 25px;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional h3{
+    text-align: center;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional p{
+    text-align: center;
+}
 
 
 
@@ -51,6 +96,23 @@ body{
 
 
 /* Responsivo */
+
+
+
+@media screen and (max-width: 660px) {
+    main .interface .profissionais .containerProfissionais{
+        flex-direction: column;
+    }
+    main .interface .profissionais h2{
+        font-size: 32px;
+    }
+    .sobre h2{
+        font-size: 32px;
+    }
+    main .interface .profissionais .containerProfissionais{
+        gap: 15px;
+    }
+}
 
 @media screen and (min-width: 1021px) {
     .btnAbrirMenu{
