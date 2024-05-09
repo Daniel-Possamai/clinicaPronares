@@ -60,7 +60,7 @@ main .interface .profissionais .containerProfissionais{
 }
 
 main .interface .profissionais .containerProfissionais .containerProfissional{
-    margin-top: 15px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     gap: 5px;
