@@ -5,17 +5,20 @@ header{
 .menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1%;
     background-color: var(--cor-primaria);
     box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.75);
 
 }
 
-.menu img{
+.menu a img{
+    max-width: 120px;
+    max-height: 120px;
     transition: 0.3s;
 }
 
-.menu img:hover{
+.menu a img:hover{
     transform: scale(1.05);
 }
 
@@ -63,7 +66,7 @@ header{
     font-size: 26px;
     position: absolute;
     color: var(--cor-secundaria);
-    top: 5px;
+    top: 25px;
     right: 5%;
 }
 
