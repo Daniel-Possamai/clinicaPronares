@@ -153,6 +153,42 @@ main .interface .nossasEspecialidades .containterEspecialidades .especialidade .
     width: 100%;
 }
 
+main .interface .localizacao .containterLocalizacao{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+main .interface .localizacao .containterLocalizacao .infoLocalizacao h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main .interface .localizacao .containterLocalizacao .infoLocalizacao p{
+    font-size: 26px;
+    text-align: center;
+    width: 500px;
+}
+
+main .interface .localizacao .containterLocalizacao .localizacaoMaps{
+    border-radius: 25px;
+    border: 2px solid var(--cor-secundaria);
+    max-width: 100%;
+}
+
+main .interface .localizacao h2{
+    margin-bottom: 20px;    
+    margin-top: 25px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 40px;
+}
+
+
+
 
 
 
@@ -215,8 +251,20 @@ main .interface .nossasEspecialidades .containterEspecialidades .especialidade .
     .imgHero img{
         object-fit: cover;
     }
-    
 
+    main .interface .localizacao .containterLocalizacao{
+        flex-direction: column;
+    }
+
+    main .interface .localizacao .containterLocalizacao .infoLocalizacao p{
+        font-size: 22px;
+        width: 300px;
+    }
+
+    main .interface .localizacao .containterLocalizacao .infoLocalizacao h3{
+        font-size: 26px;
+    }
+    
     
 }
 
