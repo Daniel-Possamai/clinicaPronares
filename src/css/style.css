@@ -177,7 +177,7 @@ main .interface .localizacao .containterLocalizacao .infoLocalizacao p{
 
 main .interface .localizacao .containterLocalizacao .localizacaoMaps{
     border-radius: 25px;
-    border: 2px solid var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
     max-width: 100%;
 }
 
