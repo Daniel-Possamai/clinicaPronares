@@ -1,6 +1,7 @@
 /* Variaveis das cores para acesso mais facil */
 :root{
     --cor-primaria: #223A54;
+    --cor-primaria2: #3a6390;
     --cor-secundaria: #d5a468;
     --cor-secundaria-efeito: #ebbb8013;
 }
@@ -141,6 +142,7 @@ main .interface .nossasEspecialidades .containterEspecialidades .especialidade{
     display: flex;
     gap: 5px;
     box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.466);
+    margin-bottom: 20px;
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade img{
@@ -186,6 +188,51 @@ main .interface .localizacao h2{
     color: var(--cor-secundaria);
     font-size: 40px;
 }
+
+main .interface .btnsAgendamento h2{
+    margin-bottom: 20px;    
+    margin-top: 25px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 40px;
+}
+
+.btnsAgendamento .containerAgendamento{
+    gap: 15px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsAgendamento .containerAgendamento .meuBotao{
+    text-align: center;
+    width: 250px;
+    box-shadow: inset 0px -3px 7px 0px var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    border: 1px solid #0b0e07;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 9px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px var(--cor-primaria);
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.btnsAgendamento .containerAgendamento .meuBotao:hover {
+    background-color: var(--cor-primaria2);
+}
+
+.btnsAgendamento .containerAgendamento .meuBotao:active {
+    position: relative;
+    top: 1px;
+}
+
 
 
 
@@ -263,6 +310,10 @@ main .interface .localizacao h2{
 
     main .interface .localizacao .containterLocalizacao .infoLocalizacao h3{
         font-size: 26px;
+    }
+    
+    .btnsAgendamento .containerAgendamento{
+        flex-direction: column;
     }
     
     
