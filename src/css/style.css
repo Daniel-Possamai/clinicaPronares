@@ -233,9 +233,36 @@ main .interface .btnsAgendamento h2{
     top: 1px;
 }
 
+footer .logo a img{
+    max-width: 120px;
+    max-height: 120px;
+    transition: 0.3s;
+}
 
+footer .logo a img:hover{
+    transform: scale(1.05);
+}
 
+footer{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    height: 150px;
+    margin-top: 25px;
+}
 
+footer .redesSociais a i{
+    color: #ffffff7e;
+    font-size: 40px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+footer .redesSociais a i:hover{
+    color: #fff;
+}
 
 
 
@@ -322,6 +349,10 @@ main .interface .btnsAgendamento h2{
 @media screen and (max-width: 400px){
     .btnAbrirMenu i{
         top: 25px;
+    }
+
+    footer{
+        flex-direction: column;
     }
 }
 
