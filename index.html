@@ -62,17 +62,17 @@
                 <h2>NOSSOS PROFISSIONAIS</h2>
                 <div class="containerProfissionais">
                     <div class="containerProfissional">
-                        <img src="./src/img/tanessaDentista.JPEG" alt="imagem do profissional especifico">
+                        <img src="./src/img/tanessaDentista.JPEG" alt="imagem da dentista">
                         <h3>fulano de tal dentista</h3>
                         <p>breve descrição do profissional</p>
                     </div>
                     <div class="containerProfissional">
-                        <img src="./src/img/marileneFisio.JPEG" alt="imagem do profissional especifico">
+                        <img src="./src/img/marileneFisio.JPEG" alt="imagem da fisioterapeuta">
                         <h3>fulano de tal dentista</h3>
                         <p>breve descrição do profissional</p>
                     </div>
                     <div class="containerProfissional">
-                        <img id="imgSalao" src="./src/img/profissionalSalao.JPEG" alt="imagem do profissional especifico">
+                        <img id="imgSalao" src="./src/img/profissionalSalao.JPEG" alt="imagem da esteticista">
                         <h3>fulano de tal dentista</h3>
                         <p>breve descrição do profissional</p>
                     </div>
@@ -83,11 +83,29 @@
                     <h2>NOSSOS AMBIENTES</h2>
                     <div class="ambientes">
                         <div class="ambiente">
-                            <img src="https://placehold.co/600x400" alt="ambiente 1">
+                            <img id="imgRecepcao" src="./src/img/recepcao.JPEG" alt="Imagem da recepção" onclick="abrirPopup('recepcao')">
                         </div>
                         <div class="ambiente">
-                            <img src="https://placehold.co/600x400" alt="ambiente 1">
+                            <img src="./src/img/corredor.JPEG" alt="Imagem do corredor da clinica" onclick="abrirPopup('corredor')">
                         </div>
+                        <div class="ambiente">
+                            <img src="./src/img/pilates.JPEG" alt="Imagem do corredor da clinica" onclick="abrirPopup('pilates')">
+                        </div>
+                        <div class="ambiente">
+                            <img src="./src/img/injetaveis.JPEG" alt="Imagem do corredor da clinica" onclick="abrirPopup('injetaveis')">
+                        </div>
+                        <div class="ambiente">
+                            <img src="./src/img/salao.JPEG" alt="Imagem do corredor da clinica" onclick="abrirPopup('salao')">
+                        </div>
+                        <div class="ambiente">
+                            <img src="./src/img/odontologico.JPEG" alt="Imagem do corredor da clinica" onclick="abrirPopup('odontologico')">
+                        </div>
+
+                        <div id="popupImagem" style="display: none;">
+                            <span id="fecharPopup" style="cursor: pointer;">&times;</span>
+                            <!-- O 'src' da imagem do popup será definido dinamicamente -->
+                            <img id="imagemGrande" src="" alt="Imagem Ampliada" style="max-width: 1020px; height: auto;">
+                          </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +139,7 @@
                 <h2>LOCALIZAÇÃO</h2>
                 <div class="containterLocalizacao">
                     <div class="infoLocalizacao">
-                        <h3>Como chegar</h3>
+                        <h3>Endereço</h3>
                         <p>R. John Kenedy, 1034 - Centro, São Miguel do Oeste - SC, 89900-000</p>
                     </div>
                     <div class="localizacaoMaps">
