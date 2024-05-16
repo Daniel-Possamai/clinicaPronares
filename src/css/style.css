@@ -93,7 +93,8 @@ main .interface .profissionais .containerProfissionais .containerProfissional im
     max-height: 320px;
     border-radius: 25px;
     object-fit: cover;
-    object-position: 50px, 50px, 30px, 40px;
+    object-position: center 1px;
+    
 }
 imgSalao
 main .interface .profissionais .containerProfissionais .containerProfissional h3{
