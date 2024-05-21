@@ -83,13 +83,32 @@ main .interface .profissionais .containerProfissionais .containerProfissional{
     margin: 15px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     padding: 15px;
     border-radius: 25px;
     max-width: 300px;
-    height: 500px;
+    max-height: 900px;
     box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.466);
-    background-color: #f0f0f0;
+    background-color: #f0f0f083;
+    overflow: hidden;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional .infoProfileCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional h3{
+    text-align: center;
+    overflow: hidden;
+}
+main .interface .profissionais .containerProfissionais .containerProfissional p{
+    text-shadow: 0px 0px 1px #0000005a;
+    font-size: 14px;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -112,6 +131,7 @@ main .interface .profissionais .containerProfissionais .containerProfissional im
 
 main .interface .profissionais .containerProfissionais .containerProfissional h3{
     text-align: center;
+    font-weight: 600;
 }
 
 main .interface .profissionais .containerProfissionais .containerProfissional p{
@@ -256,9 +276,10 @@ main .interface .btnsAgendamento h2{
     font-size: 40px;
 }
 
+
 .btnsAgendamento .containerAgendamento{
     gap: 15px;
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +287,7 @@ main .interface .btnsAgendamento h2{
 
 .btnsAgendamento .containerAgendamento .meuBotao{
     text-align: center;
-    width: 250px;
+    max-width: 250px;
     box-shadow: inset 0px -3px 7px 0px var(--cor-primaria);
     background-color: var(--cor-primaria);
     border-radius: 10px;
@@ -275,8 +296,8 @@ main .interface .btnsAgendamento h2{
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 20px;
-    padding: 9px 23px;
+    font-size: 18px;
+    padding: 5px 7px;
     text-decoration: none;
     text-shadow: 0px 1px 0px var(--cor-primaria);
     transition: background-color 0.3s ease;
@@ -334,9 +355,7 @@ footer .redesSociais a i:hover{
 
 
 @media screen and (max-width: 680px) {
-    main .interface .profissionais .containerProfissionais{
-        flex-direction: column;
-    }
+    
     main .interface .profissionais h2{
         font-size: 32px;
     }
@@ -367,6 +386,10 @@ footer .redesSociais a i:hover{
 }
 
 @media screen and (max-width: 1020px){
+    main .interface .profissionais .containerProfissionais{
+        flex-direction: column;
+    }
+
     .menu nav{
         display: none;
     }
