@@ -2,6 +2,7 @@
 :root{
     --cor-primaria: #223A54;
     --cor-primaria2: #3a6390;
+    --cor-shadowImages: #223a5445;
     --cor-secundaria: #d5a468;
     --cor-secundaria-efeito: #ebbb8013;
 }
@@ -88,9 +89,15 @@ main .interface .profissionais .containerProfissionais .containerProfissional{
     border-radius: 25px;
     max-width: 300px;
     max-height: 900px;
-    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.466);
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.191);
+    transition: 0.5s ease-in-out;
     background-color: #f0f0f083;
     overflow: hidden;
+}
+
+main .interface .profissionais .containerProfissionais .containerProfissional:hover{
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.715);
+    transform: scale(1.005);
 }
 
 main .interface .profissionais .containerProfissionais .containerProfissional .infoProfileCard{
@@ -118,7 +125,8 @@ main .interface .profissionais .containerProfissionais .containerProfissional im
     border-radius: 25px;
     object-fit: cover;
     object-position: bottom;
-    
+    border: 2px solid var(--cor-primaria2);
+    box-shadow: 2px 5px 15px 2px var(--cor-shadowImages);
 }
 
 #imgTanessa{
@@ -215,23 +223,35 @@ main .interface .nossasEspecialidades .containterEspecialidades{
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
+    max-height: auto;
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade{
     margin-top: 25px;
     padding: 2%;
     border-radius: 25px;
-    max-width: 900px;
-    max-height: 400px;
+    max-width: 100%;
+    max-height: auto;
     display: flex;
     gap: 5px;
-    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.466);
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.191);
     margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+main .interface .nossasEspecialidades .containterEspecialidades .especialidade:hover{
+    transform: scale(1.005);
+    box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.715);
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade img{
     border-radius: 25px;
-    width: 100%;
+    max-width: 550px;
+    max-height: 600px;
+    object-fit: cover;
+    border: 2px solid var(--cor-primaria);
+    box-shadow: 2px 5px 15px 2px var(--cor-shadowImages);
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade .infoEspecialidade{
@@ -382,6 +402,14 @@ footer .redesSociais a i:hover{
     main .interface .containerAmbientes .ambientes .ambiente img{
         width: 300px;
     }
+
+    main .interface .nossasEspecialidades .containterEspecialidades .especialidade{
+        flex-direction: column;
+    }
+
+    main .interface .nossasEspecialidades .containterEspecialidades .especialidade img{
+        max-height: auto;
+    }
 }
 
 @media screen and (min-width: 1021px) {
@@ -397,10 +425,6 @@ footer .redesSociais a i:hover{
 
     .menu nav{
         display: none;
-    }
-
-    main .interface .nossasEspecialidades .containterEspecialidades .especialidade{
-        max-width: 600px;
     }
 
     .imgHero{
