@@ -24,6 +24,28 @@ body{
     align-items: center;
 }
 
+.containterTextosSobre{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.textosSobre{
+    width: 280px;
+    height: 250px;
+}
+
+.textosSobre p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.textosSobre .valoresBold{
+    font-weight: 500;
+}
+
 .sobre h2{
     margin-bottom: 20px;
     text-align: center;
@@ -38,16 +60,6 @@ body{
     font-size: 26px;
 }
 
-.sobre p{
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-    width: 80%;
-}
-
-.valoresBold{
-    font-weight: 500;
-}
 
 .imgHero{
     width: 100%;
@@ -437,6 +449,18 @@ footer .redesSociais a i:hover{
         object-fit: cover;
     }
 
+    .containterTextosSobre{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .textosSobre{
+        height: initial;
+        max-height: 400px;
+    }
+
+
+
     main .interface .localizacao .containterLocalizacao{
         flex-direction: column;
     }
@@ -454,6 +478,7 @@ footer .redesSociais a i:hover{
         flex-direction: column;
     }
     
+
     
 }
 
