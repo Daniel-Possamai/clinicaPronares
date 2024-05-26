@@ -110,6 +110,7 @@ main .interface .profissionais .containerProfissionais .containerProfissional{
 main .interface .profissionais .containerProfissionais .containerProfissional:hover{
     box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.715);
     transform: scale(1.005);
+    text-shadow: 0px 0px 1px #0000005a;
 }
 
 main .interface .profissionais .containerProfissionais .containerProfissional .infoProfileCard{
@@ -125,7 +126,6 @@ main .interface .profissionais .containerProfissionais .containerProfissional h3
     overflow: hidden;
 }
 main .interface .profissionais .containerProfissionais .containerProfissional p{
-    text-shadow: 0px 0px 1px #0000005a;
     font-size: 14px;
     text-align: center;
     overflow: hidden;
@@ -252,11 +252,14 @@ main .interface .nossasEspecialidades .containterEspecialidades .especialidade{
     box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.191);
     margin-bottom: 20px;
     transition: 0.5s ease-in-out;
+    
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade:hover{
     transform: scale(1.005);
     box-shadow: 2px 5px 15px 2px rgba(0, 0, 0, 0.715);
+    text-shadow: 0px 0px 1px #0000005a;
+    
 }
 
 main .interface .nossasEspecialidades .containterEspecialidades .especialidade img{
