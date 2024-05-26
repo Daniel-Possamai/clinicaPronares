@@ -410,7 +410,30 @@ footer .redesSociais a i:hover{
     color: #fff;
 }
 
+.direitosReservados{
+    color: #ffffff;
+    background-color: var(--cor-primaria);
+    font-size: 17px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
 
+.creditos{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+}
+
+.creditos a{
+    text-align: center;
+    padding: 3px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 
 
@@ -451,6 +474,10 @@ footer .redesSociais a i:hover{
     main .interface .nossasEspecialidades .containterEspecialidades .especialidade img{
         max-width: 450px;
         max-height: 450px;
+    }
+
+    .direitosReservados{
+        font-size: 12px;
     }
 }
 
